@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlogin"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="User Login"
+        android:textSize="25dp"
+        android:layout_margin="80dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userlogin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext"
+        android:hint="Username"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="normal"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext"
+        android:hint="Password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="normal"
+        android:drawableLeft="@drawable/ic_outline_info_24"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textSize="20sp"
+        android:layout_below="@+id/password"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#788793"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpwd"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="10dp"
+        android:text="Forgot password ?"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/others"
+        android:text="or sign in with"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/forgotpwd"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/socialicons"
+        android:layout_below="@+id/others">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/img"></ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/img_2"></ImageView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
